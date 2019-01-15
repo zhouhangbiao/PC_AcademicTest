@@ -1,0 +1,51 @@
+.changepassword .modal-content {
+  position: absolute;
+  left: 50%;
+  /* 定位父级的50% */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 20px 0 20px;
+  width: 380px;
+  height: 350px;
+  background-color: white;
+  overflow: auto;
+}
+.changepassword .form-group{
+  display: block !important;
+}
+.changepassword p.text-c {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.changepassword #oldPassword,
+.changepassword  #newPassword,
+.changepassword  #reNewPassword {
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  height: 44px;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+  width: 338px;
+}
+
+.changepassword #cancel {
+  margin-left: 14px
+}
+.changepassword .focusborder {
+  border: 1px solid #147ef6 !important;
+  background-color: #fff !important;
+}
+.changepassword .on {
+  background-color: #fff !important;
+}
+.changepassword #login,.changepassword #cancel{
+  margin-top: 8px;
+}
+body.modal-open {
+  overflow-y: hidden !important;
+  padding-right: 0 !important;
+  }
+#login.btn-pre-lg,
+#cancel.btn-pre-lg{
+  font-size: 18px;
+}

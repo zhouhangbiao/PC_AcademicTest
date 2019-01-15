@@ -1,0 +1,52 @@
+<!-- 系统菜单栏 -->
+<ul class="exam-nav f-clear">
+  <li class="float-l">
+    系统
+    <ul>
+      <li><a class="nav-login">退出</a></li>
+      <li><a class="nav-password" data-toggle="modal" data-target="#myModal" >修改密码</a></li>
+    </ul>
+  </li>
+  <li class="float-l menu-border">|</li>
+  <li class="float-l">
+    判分
+    <ul>
+      <li><a class="nav-task">阅卷任务</a></li>
+      <li><a class="nav-marking">仲裁任务</a></li>
+      <li><a class="nav-history">判卷历史</a></li>
+    </ul>
+  </li>
+  <li class="float-l menu-border">|</li>
+  <li class="float-l"><a class="nav-help" id="help">帮助</a></li>
+</ul>
+
+<!-- 修改密码弹框 -->
+<div class="modal fade changepassword" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <form>
+              <p  class="text-c">修改密码</p>
+              <div class="form-group">
+
+                <input type="password" onKeypress="javascript:if(event.keyCode == 32) event.returnValue = false;"class="form-control pre-h2" id="oldPassword" placeholder="请输入旧密码，默认密码111111">
+              </div>
+              <div class="form-group">
+
+                <input type="password" onKeypress="javascript:if(event.keyCode == 32) event.returnValue = false;" class="form-control pre-h2" id="newPassword" placeholder="请输入新密码">
+              </div>
+              <div class="form-group">
+
+                  <input type="password" onKeypress="javascript:if(event.keyCode == 32) event.returnValue = false;" class="form-control pre-h2" id="reNewPassword" placeholder="请确认新密码">
+                </div>
+              <input type="button" id="login" class="btn btn-primary btn-pre-lg"  value="确定" />
+              <input type="button" id="cancel" class="btn btn-pre-default btn-pre-lg" value="取消" />
+            </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+

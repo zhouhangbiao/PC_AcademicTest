@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <title>判卷历史列表</title>
+  <link rel="stylesheet" href="/assets/vendor/pagination/jquery.pagination.css">
+  ${require("html-loader?interpolate!../_assets.html")}
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/3.3.7/css/bootstrap-datetimepicker.min.css">
+  <script src="/assets/vendor/bootstrap/3.3.7/js/bootstrap-datetimepicker.min.js"></script>
+  <script src="/assets/vendor/bootstrap/3.3.7/js/bootstrap-datetimepicker.zh-CN.js"></script>
+  <script src="/assets/vendor/pagination/jquery.pagination-1.2.1.js"></script>
+</head>
+
+<body>
+${require("html-loader?interpolate!../_menuBar.html")}
+<div id="main">
+  <ul id="myTab" class="nav nav-tabs">
+    <li class="active">
+      <a href="#home" data-toggle="tab">已阅试题列表</a>
+    </li>
+  </ul>
+  <div id="queryData">
+    <div class="input-group">
+      <input type="number" class="form-control enterNum" placeholder="请输入题目ID号" aria-describedby="basic-addon2"
+             onkeypress="return event.keyCode>=48&&event.keyCode<=57" id="testID">
+      <input type="text" class="form-control enterPoint" placeholder="请输入得分" aria-describedby="basic-addon2"
+             onkeyup="this.value=(this.value.match(/\d+(\.\d{0,1})?/)||[''])[0]" id="getPoint"
+      >
+
+      <div class="input-group date form_date mr10" id="dataOne">
+        <input class="form-control" type="text" value="" id="startDate" data-format="dd/MM/yyyy" placeholder="开始时间">
+        <span class="add-on btnOne"><i data-date-icon="icon-calendar" class="icon-calendar picBtn"></i></span>
+      </div>
+      <div id="crossBar">_</div>
+      <div class="input-group date form_date" id="dataThree">
+        <input class="form-control" type="text" value="" id="endDate" placeholder="结束时间">
+        <span class="add-on btnTwo"><i data-date-icon="icon-calendar" class="icon-calendar picBtnEnd"></i></span>
+      </div>
+      <div class="input-group date form_date mr10 findBtn">
+        <button class="btn btn-primary btn-pre-m">查询</button>
+      </div>
+    </div>
+  </div>
+  <div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="doing">
+      <div class="container table-cont" id='table-cont'>
+        <table id="doing_table" class="display table table-striped" border="1">
+          <thead>
+          <tr>
+            <th>序号</th>
+            <th>试题任务号</th>
+            <th>状态</th>
+            <th>卷号</th>
+            <th>题目ID号</th>
+            <th>任务批号</th>
+            <th>得分</th>
+            <th>提交时间</th>
+            <th>操作</th>
+          </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="pageFoot">
+        <div class="box">
+          <select id="selectPage">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+          <div id="pagination3" class="page fl">
+            <div class="ui-pagination-container">
+            </div>
+          </div>
+          <div id="record">
+            <span>显示<span id="start">1</span>-<span id="end">10</span>, 共</span>
+            <span id="totalCount"></span>
+            <span>记录</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+${require("html-loader?interpolate!../_statusBar.html")}
+</body>
+</html>

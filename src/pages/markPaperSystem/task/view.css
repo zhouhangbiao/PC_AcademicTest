@@ -1,0 +1,251 @@
+body {
+  background: white;
+  width: 1024px;
+}
+
+.reelNumber {
+  height: 48px;
+  line-height: 48px;
+  color: #1a1a1a;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.reelNumberJuan {
+  width: 160px;
+  float: left;
+  padding-left: 12px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.reelNumberNumTi {
+  width: 100px;
+  float: left;
+  padding-left: 10px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.reelNumberNumDa {
+  float: left;
+  padding-left: 10px;
+}
+
+.reBack {
+  float: right;
+  line-height: 48px;
+  margin-right: 12px;
+}
+
+.reelNumberList {
+  height: 458px;
+  overflow-y: scroll;
+  padding-left: 12px;
+  overflow-x: hidden;
+  width: 160px;
+  float: left;
+}
+
+.reelNumberList li {
+  line-height: 30px;
+  height: 30px;
+}
+
+.reelNumberListTwo {
+  height: 458px;
+  overflow-y: scroll;
+  padding-left: 12px;
+  overflow-x: hidden;
+  width: 100px;
+  float: left;
+}
+
+.reelNumberListTwo li {
+  line-height: 30px;
+  height: 30px;
+}
+
+.topic {
+  width: 864px;
+  padding: 10px 11px 0 12px;
+  height: 468px;
+  float: left;
+  background: #f5f6f7;
+  border-right: 1px solid #e5e5e5;
+}
+
+.topic .reelNumberListThree {
+  width: 674px;
+  overflow-y: scroll;
+  height: 458px;
+  float: left;
+  background: white;
+  overflow-x: auto;
+}
+
+.topic .table {
+  width: 145px;
+  float: left;
+  margin-left: 15px;
+}
+
+.contentTest {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.footBtn {
+  border-bottom: 1px solid #e5e5e5;
+  height: 48px;
+  line-height: 48px;
+}
+
+.stateBtnLeft .onTopic {
+  background-color: #f5f6f7;
+  border: 1px solid #d9d9d9;
+  color: #4d4d4d;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.footBtn .widthBtn {
+  width: 72px;
+}
+
+.stateBtnRight .widthBtn{
+  width: 72px;
+  margin-right: 12px;
+}
+.nav-active {
+  background-color: #e5e5e5;
+}
+
+.navActive {
+  background-color: #3795fe;
+  color: white !important;
+}
+
+.nav-tabs > li {
+  float: none !important;
+  line-height: 30px !important;
+  font-size: 14px !important;
+  color: #1a1a1a !important;
+  border: 0;
+  padding: 0 !important;
+}
+
+.nav > li > a {
+  padding: 0 !important;
+  line-height: 30px !important;
+  font-size: 14px !important;
+  color: #1a1a1a !important;
+  border: 0;
+}
+
+#myTab {
+  width: 160px;
+  display: inline-block;
+  height: 468px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-left: 12px;
+}
+
+#myTabContent {
+  width: 100px;
+  display: inline-block;
+  height: 468px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#myTabContent .container {
+  line-height: 30px;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  border: 0;
+}
+
+.viewTest {
+  float: left;
+  width: 160px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  height: 468px;
+}
+
+.viewChild {
+  width: 100px;
+  float: left;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 468px;
+}
+
+.test {
+  float: left;
+  width: 200px;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#parent li, #child li {
+  padding-left: 12px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+
+.btn-list {
+  width: 600px;
+  margin-left: 12px;
+}
+
+.checkBtn {
+  width: 100px;
+}
+
+.checkBtnTwo {
+  width: 86px;
+  display: inline-block;
+}
+
+.stateBtnRight {
+  text-align: right;
+  margin-top: 10px;
+  display: inline-flex;
+}
+
+.table > tbody > tr > td, .table > thead > tr > th, .table > tfoot > tr > th {
+  width: 70px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: normal;
+  background: white;
+}
+
+.table > tbody > tr > td {
+  color: #4d4d4d;
+  background: white;
+}
+
+.table > thead > tr > th, .table > tfoot > tr > th {
+  border-bottom: 0;
+  color: #1a1a1a;
+}
+
+#main {
+  width: 1024px;
+}
+
+.startJudge {
+  margin-left: 12px;
+}

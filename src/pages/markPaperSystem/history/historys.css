@@ -1,0 +1,419 @@
+body {
+  width: 1024px;
+  border: 1px solid #e5e5e5;
+  padding-bottom: 8px;
+}
+
+.originalButton {
+  padding: 0 8px !important;
+  float: right !important;
+}
+
+#home .row:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+#ios .row:nth-child(2) {
+  margin-bottom: 12px;
+}
+
+#main div.dataTables_length label {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 34px;
+  width: 70px;
+  height: 28px;
+  vertical-align: center;
+  color: #337ab7;
+}
+
+#main th {
+  border: 1px solid #e5e5e5;
+}
+
+#main .input-group-btn {
+  display: block;
+}
+
+/*
+#main .form-control {
+  width: 46px;
+  height: 28px;
+  margin-right: 8px;
+}
+*/
+
+#myTab {
+  background: white;
+  padding-left: 12px;
+}
+
+div.dataTables_length {
+  width: 54px !important;
+  height: 28px
+}
+
+.nav > li > a {
+  padding: 10px 25px !important;
+}
+
+.dataTables_paginate {
+  float: left !important;
+  text-align: left !important;
+}
+
+div .dataTables_info {
+  float: right;
+  text-align: right;
+  line-height: 28px;
+  font-size: 14px;
+  color: #4d4d4d;
+  margin-top: 5px;
+}
+
+#main table {
+  padding: 0 !important;
+  margin-left: 12px;
+}
+
+#main .container {
+  width: 1012px;
+  margin-top: 5px;
+  height: 452px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#main div.dataTables_length select {
+  width: 70px;
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: center;
+  margin-top: 2px;
+  color: #337ab7;
+}
+
+#main .pagination li a {
+  margin: 0 4px;
+}
+
+.pagination {
+  position: relative;
+}
+
+#iosPage {
+  width: 100px;
+  display: inline-block;
+  position: absolute;
+  left: 482px;
+  bottom: 321px;
+}
+
+#example.table-striped > tbody > tr:nth-of-type(odd), #exampled.table-striped > tbody > tr:nth-of-type(even), td {
+  background-color: white;
+}
+
+#changePage, #change {
+  vertical-align: top;
+  line-height: 32px;
+  height: 32px;
+  width: 46px;
+  margin-top: 4px;
+  margin-left: 8px;
+  border: none;
+}
+
+#dataTable-btn, #dataTableBtn {
+  vertical-align: top;
+  line-height: 32px;
+  height: 32px;
+  margin-top: 4px;
+  width: 34px;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #3795fe;
+  border-color: #3795fe;
+}
+
+#myTabContent thead tr{
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background: #f0f0f0;
+}
+#main thead th, #main tbody td, #main thead th, #main tbody td {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+#main thead th {
+  width: 50px;
+  line-height: 40px;
+  height: 40px;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+thead tr {
+  background: white !important;
+}
+
+.datetimepicker-days thead tr:last-child {
+  border-bottom: 1px solid #e5e5e5 !important;
+  border-top: 1px solid #e5e5e5 !important;
+}
+
+#main .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  color: #147ef6;
+  font-size: 14px;
+  cursor: default;
+  background-color: #fff;
+  border-bottom: 2px solid #147ef6;
+  outline: none;
+  text-align: center;
+}
+
+div #example_length label {
+  font-size: 14px;
+}
+
+div .dataTables_paginate {
+  padding-left: 20px;
+}
+#myTabContent tr>td a:not(:first-child){margin-left: 10px;}
+#main .nav-tabs > li > a {
+  font-size: 14px;
+  height: 48px;
+  outline: none;
+  border: none;
+  line-height: 28px;
+  color: #4d4d4d;
+}
+
+#myTab li {
+  width: 150px;
+  line-height: 28px;
+}
+
+#myTab li:last-child {
+  height: 48px;
+  line-height: 46px;
+  margin-right: 12px
+}
+
+div.dataTables_paginate {
+  margin: 0;
+  white-space: nowrap;
+  text-align: left;
+}
+
+#main thead {
+  width: 1024px !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#queryData {
+  height: 56px;
+  line-height: 56px;
+  padding-top: 13px;
+  margin-left: 12px;
+  position: relative;
+}
+
+#queryData .enterNum, #queryData .enterPoint {
+  width: 160px;
+  height: 36px;
+  border-color: #d9d9d9;
+  background: #fff;
+}
+
+#queryData .enterPoint {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.form-group, .form_date {
+  display: inline-block;
+}
+
+#startDate, #endDate {
+  width: 180px;
+  border-color: #d9d9d9;
+  background: #fff;
+  height: 36px;
+}
+
+#endDate {
+  margin: 0 16px;
+}
+
+#dataTwo {
+  margin-left: 4px;
+  margin-right: 16px;
+}
+
+#dataFour {
+  margin-left: 4px;
+  margin-right: 16px;
+}
+
+#queryData .btn-pre-m {
+  height: 36px;
+  margin-bottom: 28px;
+  width: 58px;
+}
+
+.picBtn {
+  width: 20px;
+  height: 20px;
+  background: url("../../../assets/images/date.png") no-repeat;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 100;
+}
+
+.picBtnEnd {
+  width: 20px;
+  height: 20px;
+  background: url("../../../assets/images/date.png") no-repeat;
+  position: absolute;
+  right: 25px;
+  top: 8px;
+  z-index: 100;
+}
+
+.datetimepicker td {
+  padding: 8px 8px;
+  width: 40px;
+  height: 36px;
+  font-size: 12px;
+  color: #4d4d4d;
+}
+
+.datetimepicker th {
+  padding: 8px 8px;
+  height: 24px;
+  width: 40px;
+  font-size: 12px;
+  color: #1a1a1a;
+}
+
+.today {
+  background: #3795fe !important;
+}
+
+#dataOne, #dataThree {
+  position: relative;
+}
+
+.datetimepicker {
+  padding: 0;
+}
+
+.datetimepicker th.switch {
+  font-size: 14px;
+  color: #1a1a1a;
+  font-weight: normal;
+}
+
+#crossBar {
+  display: inline-block;
+  position: absolute;
+  right: 258px;
+  top: -15px;
+  z-index: 101;
+  color: #d9d9d9;
+}
+
+#noData {
+  position: fixed;
+  width: 140px;
+  height: 180px;
+  top: 50%;
+  left: 50%;
+  margin-top: -210px;
+  margin-left: -120px;
+}
+
+.history-cont #home .dataTables_scrollBody {
+  height: 364px;
+}
+
+#record {
+  display: inline-block;
+  float: right;
+  letter-spacing: 2px;
+  color: #4d4d4d;
+  font-size: 14px;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+#doing {
+  height: 452px !important;
+}
+
+.pageFoot {
+  margin-left: 15px;
+}
+
+#myTabContent tr > th:first-child, #myTabContent tr > td:first-child {
+  width: 50px;
+}
+
+#myTabContent tr > th:nth-child(2), #myTabContent tr > td:nth-child(2) {
+  width: 130px;
+}
+
+#myTabContent tr > th:nth-child(3), #myTabContent tr > td:nth-child(3) {
+  width: 80px;
+}
+
+#myTabContent tr > th:nth-child(4), #myTabContent tr > td:nth-child(4) {
+  width: 110px;
+}
+
+#myTabContent tr > th:nth-child(5), #myTabContent tr > td:nth-child(5) {
+  width: 110px;
+}
+
+#myTabContent tr > th:nth-child(6), #myTabContent tr > td:nth-child(6) {
+  width: 110px;
+}
+
+#myTabContent tr > th:nth-child(7), #myTabContent tr > td:nth-child(7) {
+  width: 80px;
+}
+
+#myTabContent tr > th:nth-child(8), #myTabContent tr > td:nth-child(8) {
+  width: 180px;
+}
+
+#myTabContent tr > th:nth-child(9), #myTabContent tr > td:nth-child(9) {
+  width: 150px;
+}
+
+.container {
+  padding: 0;margin: 0;
+}
+
+#myTabContent {
+  margin-right: 12px;
+}

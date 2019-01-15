@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+
+  <title>登录</title>  
+  ${require("html-loader?interpolate!./_assets.html")}
+ 
+  <!-- 私有引入 -->
+
+</head>
+
+<body>
+
+  <div class="bg-box">
+      <div class="input-box login">
+        <form>
+          <div class="form-group">
+            <p  class="text-c">用户登录</p>
+            <input type="text" class="form-control pre-h2 " id="userName" placeholder="请输入用户名">
+          </div>
+          <div class="form-group">
+         
+            <input type="password" onKeypress="javascript:if(event.keyCode == 32) event.returnValue = false;" class="form-control pre-h2 " id="passWord" placeholder="请输入密码">
+          </div>           
+          <input type="button" id="login" class="btn btn-primary btn-pre-lgd" value="登录" />
+        </form>
+      </div>
+     <div class="bottom-img">   
+     </div>
+  </div>
+</body>
+</html>

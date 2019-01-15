@@ -1,0 +1,34 @@
+.scoring-table {
+  width: 100%;
+  margin: 20px 0 10px 0;
+}
+.scoring-table >thead>tr>th{
+  border-bottom-width: 1px;
+  font-weight: normal;
+  text-align: center;
+}
+.scoring-table th, .scoring-table td {
+  padding: 5px 0;
+  background-color: #fff;
+}
+.scoring-table .btn + .btn {
+  margin-left: 3px;
+}
+.scoring-value {
+  width: 70px;
+  border: 1px solid #fff;
+  text-align: center;
+
+}
+.scoring-value:hover,
+.scoring-value:focus {
+  width: 70px;
+  border: 1px solid #3795fe;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px #ccc;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}

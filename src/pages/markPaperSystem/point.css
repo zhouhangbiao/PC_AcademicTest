@@ -1,0 +1,91 @@
+.SampleInformations {
+  width: 1024px;
+  height: 572px;
+  background: rgb(245, 246, 247);
+}
+
+.SampleInformations .nav {
+  width: 1024px;
+  background: #fff;
+  padding-left: 12px;
+}
+
+.SampleInformations .nav li a {
+  padding: 0;
+  height: 48px;
+  line-height: 48px;
+}
+
+.SampleInformations ul .active a {
+  color: #147ef6 !important;
+  border: none !important;
+  border-bottom: 2px solid #147ef6 !important;
+}
+
+/* .activetabs a{
+    color:#147ef6;
+
+} */
+
+.SampleInformations ul li {
+  width: 120px;
+  text-align: center;
+  line-height: 48px;
+  height: 48px;
+  display: inline-block;
+}
+
+.SamplePicture {
+  width: 550px;
+  height: 510px;
+  margin-top: 10px;
+  margin-left: 12px;
+  margin-right: 10px;
+  overflow: scroll;
+  display: inline-block;
+  border: 1px solid rgb(231, 231, 231)
+}
+
+.SamplePicture img{
+  display: none;
+}
+.ScoringPoints {
+  width: 450px;
+  overflow-x: scroll;
+  float: right;
+  text-align: center;
+  margin-top:-480px;
+  clear: left;
+}
+
+.QuestionIndextitle {
+  float: right;
+  width: 450px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid rgb(221, 221, 221);
+  text-align: center;
+  background: #fff;
+  margin-top: 10px;
+
+}
+.SampleTitleTr td p {
+  text-align: center;
+  width: 40px;
+  min-height: 48px;
+  display: table;
+  margin: 0 5px;
+
+}
+.SampleTitleTr td p span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.p140 {
+
+    width: 140px !important;
+  }
+.tbody{
+  background: #fff;
+
+}

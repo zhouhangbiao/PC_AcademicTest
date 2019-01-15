@@ -1,0 +1,74 @@
+//----------------------------------------------------
+//作者:粉红豹
+//功能描述：菜单模块
+//使用模块：全局
+//创建时间:2018/07/06
+//------------------修改记录-------------------------
+//修改人      修改日期        修改目的
+//----------------------------------------------------
+@import "../core/setting";
+.exam-nav {
+  padding: 0 12px;
+  position: relative;
+  z-index: 10;
+  background: $gray-500;
+  border-bottom: 1px solid $border-base-color;
+ a {
+   padding-left: 34px;
+   margin-left: -34px;
+   display: inline-block;
+   width: 100%;
+   color: #4d4d4d;
+   &:hover {
+     color: $black;
+   }
+ }
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+   > li {
+     width: 100px;
+     height: 39px;
+     padding-left: 34px;
+     line-height: 39px;
+     cursor: pointer;
+     color: #4d4d4d;
+    & > ul {
+      margin-left: -34px;
+      width: 120px;
+      padding-top: 4px;
+      box-shadow: 2px 1px 5px #ccc;
+      display: none;
+      background: $white;
+      li {
+        padding-left: 34px;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+
+
+        &:hover,
+        .on {
+          color: #4d4d4d;
+          background: $gray-800;
+        }
+        a {
+          padding-left: 0;
+          margin-left: 0;
+        }
+      }
+    }
+     &.menu-border {
+       padding-left: 0;
+       width: auto;
+       color: $gray-700;
+     }
+
+    &:hover {
+       > ul {
+         display: block;
+       }
+    }
+  }
+}

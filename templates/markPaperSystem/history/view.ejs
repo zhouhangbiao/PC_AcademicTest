@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="param" content="batchId=123">
+  <meta name="param" content="taskId=456">
+  <title>查看已判卷任务</title>
+  ${require("html-loader?interpolate!../_assets.html")}
+</head>
+
+<body>
+${require("html-loader?interpolate!../_menuBar.html")}
+<div id="main">
+  <div class="exam-toolbar border-top-0">
+    <div class="toolbar-columns">答卷预览：</div>
+    <div class="toolbar-btn">
+      <button class="btn btn-other-size btn-primary" id="jump_tasks">返回判卷历史列表</button>
+    </div>
+  </div>
+  <div class="task-view-container">
+    <div class="side-left">
+      <div class="marking-show" id="marking_show"></div>
+    </div>
+    <div class="side-right">
+      <div id="scoreboard_tools" class="scoring-container"></div>
+    </div>
+  </div>
+  <div class="exam-toolbar toolbar-footer">
+    <div class="toolbar-columns">
+      <ul class="btn-list">
+        <li class="float-l"><button class="btn btn-pre-default btn-other-size" id="prev_task"><span class="icon icon-left v-align-m"></span> <span>上一题</span></button></li>
+        <li class="float-l"><button class="btn btn-pre-default btn-other-size" id="next_task"><span class="icon icon-right-ss v-align-m"></span> <span>下一题</span></button></li>
+      </ul>
+    </div>
+    <div class="toolbar-btn">
+      <button class="btn btn-primary btn-other-size" id="view_stem">查看题干</button>
+      <button class="btn btn-primary btn-other-size hidden" id="jump_marking">回评</button>
+    </div>
+  </div>
+</div>
+${require("html-loader?interpolate!../_statusBar.html")}
+</body>
+</html>

@@ -1,0 +1,241 @@
+body {
+  width: 1024px;
+  border: 1px solid #e5e5e5;
+  padding-bottom: 16px;
+}
+.originalButton {
+  padding: 0 8px !important;
+  float: right !important;
+}
+
+#home .row:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+#ios .row:nth-child(2) {
+  margin-bottom: 12px;
+}
+
+#main div.dataTables_length label {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 34px;
+  width: 70px;
+  height: 28px;
+  vertical-align: center;
+  color: #337ab7;
+}
+
+#main th {
+  border: 1px solid #e5e5e5;
+}
+
+#main .input-group-btn {
+  display: block;
+}
+
+#main .form-control {
+  width: 46px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+#myTab {
+  background: white;
+  padding-left: 12px;
+}
+
+div.dataTables_length {
+  width: 54px !important;
+  height: 28px;
+}
+
+.nav > li > a {
+  padding: 10px 25px !important;
+}
+
+.dataTables_paginate {
+  float: left !important;
+  text-align: left !important;
+}
+
+div .dataTables_info {
+  float: right;
+  text-align: right;
+  line-height: 28px;
+  font-size: 14px;
+  color: #4d4d4d;
+  margin-top: 5px;
+}
+
+#main table {
+  margin-left: 12px;
+}
+
+#main .container {
+  width: 1012px;
+  margin-top: 10px;
+  height: 452px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#main div.dataTables_length select {
+  width: 70px;
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+  vertical-align: center;
+  margin-top: 2px;
+  font-size: 14px;
+  color: #337ab7;
+}
+
+#main .pagination li a {
+  margin: 0 4px;
+}
+
+.pagination {
+  position: relative;
+}
+
+#iosPage {
+  width: 100px;
+  display: inline-block;
+  position: absolute;
+  left: 562px;
+  bottom: 364px;
+}
+
+#example.table-striped > tbody > tr:nth-of-type(odd), #exampled.table-striped > tbody > tr:nth-of-type(even), td {
+  background-color: white;
+}
+
+#changePage, #change {
+  vertical-align: top;
+  line-height: 32px;
+  height: 32px;
+  width: 46px;
+  margin-top: 4px;
+  margin-left: 6px;
+  border: none;
+}
+
+#dataTable-btn, #dataTableBtn {
+  vertical-align: top;
+  line-height: 32px;
+  height: 32px;
+  margin-top: 4px;
+  width: 34px;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #3795fe;
+  border-color: #3795fe;
+}
+
+#main thead tr {
+  text-align: center;
+  height: 40px;
+}
+
+#main thead tr, #main thead th, #main tbody td, #main thead th, #main tbody td {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+#main thead th {
+  width: 50px;
+  line-height: 40px;
+  height: 40px;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+#main .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+  color: #147ef6;
+  font-size: 14px;
+  cursor: default;
+  background-color: #fff;
+  border-bottom: 2px solid #147ef6;
+  outline: none;
+  text-align: center;
+}
+
+div #example_length label {
+  font-size: 14px;
+}
+
+div .dataTables_paginate {
+  padding-left: 20px;
+}
+#myTabContent tr>td a:not(:first-child){margin-left: 10px;}
+#main .nav-tabs > li > a {
+  height: 48px;
+  outline: none;
+  line-height: 28px;
+}
+
+#myTab li {
+  width: 130px;
+  line-height: 28px;
+}
+
+#myTab li:last-child {
+  float: right;
+  height: 48px;
+  line-height: 46px;
+  margin-right: 12px
+}
+
+div.dataTables_paginate {
+  margin: 0;
+  white-space: nowrap;
+  text-align: left;
+}
+
+#noData {
+  position: fixed;
+  width: 140px;
+  height: 180px;
+  top: 50%;
+  left: 50%;
+  margin-top: -210px;
+  margin-left: -120px;
+  
+}
+#record{
+  display: inline-block;
+  float: right;
+  margin-right: 12px;
+  letter-spacing: 2px;
+  color: #4d4d4d;
+  font-size: 14px;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+#doing,#done{
+  height: 452px!important;
+}
+.pageFoot{margin-left: 15px;}
+.container{padding: 0;margin: 0;}
+.table-cont{
+  overflow: auto;
+}
+
+#done tr>th:first-child,#done tr>td:first-child,#doing tr>th:first-child,#doing tr>td:first-child{width: 50px;}
+#done tr>th:nth-child(2),#done tr>td:nth-child(2){width:130px;}
+#done tr>th:nth-child(3),#done tr>td:nth-child(3),#done tr>th:nth-child(4),#done tr>td:nth-child(4),#done tr>th:nth-child(5),#done tr>td:nth-child(5)
+#done tr>th:nth-child(6),#done tr>td:nth-child(6){width:90px;}
+#done tr>th:nth-child(7),#done tr>td:nth-child(7),#done tr>th:nth-child(8),#done tr>td:nth-child(8){width:180px;}
+#done tr>th:nth-child(9),#done tr>td:nth-child(9){width:100px;}
+#doing tr>th:nth-child(2),#doing tr>td:nth-child(2){width:150px;}
+#doing tr>th:nth-child(3),#doing tr>td:nth-child(3),#doing tr>th:nth-child(4),#doing tr>td:nth-child(4),#doing tr>th:nth-child(5),#doing tr>td:nth-child(5){width:100px;}
+#doing tr>th:nth-child(6),#doing tr>td:nth-child(6),#doing tr>th:nth-child(7),#doing tr>td:nth-child(7){width: 200px;}
+#doing tr>th:nth-child(8),#doing tr>td:nth-child(8){width: 100px;}
+

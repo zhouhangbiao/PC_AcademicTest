@@ -1,0 +1,18 @@
+//暂无数据
+
+.data-null-page {
+  display: none;
+  .display-table {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .data-null-img {
+    margin: 0 auto;
+    width: 140px;
+    height: 180px;
+    background: url("../images/nodata.png") no-repeat;
+  }
+}
+

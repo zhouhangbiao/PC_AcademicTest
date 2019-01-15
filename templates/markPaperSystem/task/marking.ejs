@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="param" content="batchId=123">
+  <meta name="param" content="taskId=456">
+  <title>正常判分</title>
+  ${require("html-loader?interpolate!../_assets.html")}
+</head>
+
+<body>
+${require("html-loader?interpolate!../_menuBar.html")}
+<div id="main" class="main-container">
+<div id="external_tools" class="external-container">
+  <ul class="tools-item">
+    <li id="prev_batch">
+      <div class="double"><span class="icon icon-pre"></span></div>
+      <p>上批任务</p>
+    </li>
+    <li id="next_batch">
+      <div class="double"><span class="icon icon-next"></span></div>
+      <p>下批任务</p>
+    </li>
+  </ul>
+</div>
+<div class="marking-sidebar">
+  <div class="text-center">
+    <button class="btn btn-pre-default btn-other-size btn-block" id="set_problem" data-toggle="modal" data-target="#set_problem_content">设为问题试题</button>
+    <p class="block-space-20"></p>
+    <button class="btn btn-primary btn-other-size" id="view_stem">查看题干</button>
+    <button class="btn btn-primary btn-other-size" id="view_point">查看给分点</button>
+  </div>
+  <div id="scoring_tools" class="scoring-container"></div>
+</div>
+</div>
+<!-- 上报问题试题 -->
+<div class="modal fade" tabindex="-1" role="dialog" id="set_problem_content">
+  <div class="modal-dialog" role="document">
+    <form class="form-horizontal" style="width: 100%">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">上报问题试题</h4>
+        </div>
+        <div class="modal-body">
+
+          <div class="form-group">
+            <label for="description" class="col-sm-3 control-label">问题试题描述：</label>
+            <div class="col-sm-8">
+              <textarea id="description" maxlength="150" placeholder="最多输入150个字，必填项" required="required" style="resize: none; width: 100%; height: 200px;"></textarea>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-pre-default btn-pre-m" data-dismiss="modal">取消</button>
+          <input type="submit" class="btn btn-primary btn-pre-m" id="submit_problem" value="提交">
+        </div>
+      </div><!-- /.modal-content -->
+    </form>
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+${require("html-loader?interpolate!../_statusBar.html")}
+</body>
+</html>

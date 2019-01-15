@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="param" content="taskId=456">
+  <title>查看给分点</title>
+  ${require("html-loader?interpolate!./_assets.html")}
+</head>
+
+<body class="window-open-body">
+
+  <div id="main" class="SampleInformations">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs " role="tablist">
+
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content SamplePicture">
+
+    </div>
+    <div class="QuestionIndextitle">
+      <p class="QuestionIndex"></p>
+    </div>
+
+    <!-- ScoringPoints -->
+    <div class="ScoringPoints">
+
+      <table class="table table-bordered ">
+        <tbody  class="tbody">
+                  <!-- On rows -->
+        <tr class="SampleTitleTr ">
+          <td><p ><span>给分点</span></p></td>
+          <td><p class="p140"><span>给分点描述</span></p></td>
+          <td><p ><span>最高得分</span></p></td>
+          <td><p ><span>给分步长</span></p></td>
+        </tr>
+
+      </tbody>
+      </table>
+
+    </div>
+  </div>
+</body>
+
+</html>

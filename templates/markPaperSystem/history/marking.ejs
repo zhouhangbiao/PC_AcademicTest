@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="param" content="batchId=123">
+  <meta name="param" content="taskId=456">
+  <title>回评判分</title>
+  ${require("html-loader?interpolate!../_assets.html")}
+</head>
+
+<body>
+${require("html-loader?interpolate!../_menuBar.html")}
+<div id="main" class="main-container">
+  <div class="marking-sidebar">
+    <div class="text-center">
+      <button class="btn btn-primary btn-other-size" id="view_stem">查看题干</button>
+      <button class="btn btn-primary btn-other-size" id="view_point">查看给分点</button>
+    </div>
+    <div id="scoring_tools" class="scoring-container"></div>
+  </div>
+</div>
+${require("html-loader?interpolate!../_statusBar.html")}
+</body>
+</html>

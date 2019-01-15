@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="param" content="batchId=123">
+  <title>查看判卷任务</title>
+  ${require("html-loader?interpolate!../_assets.html")}
+</head>
+
+<body>
+${require("html-loader?interpolate!../_menuBar.html")}
+<div id="main f-clear">
+  <div class="reelNumber">
+    <div class="reelNumberJuan">试题任务号:</div>
+    <div class="reelNumberNumDa">答卷预览:</div>
+    <div class="reBack">
+      <button class="btn btn-primary btn-other-size" id="reBackList">返回阅卷任务列表</button>
+    </div>
+  </div>
+  <div class="f-clear contentTest">
+    <div class="viewTest">
+      <ul id="parent">
+      </ul>
+    </div>
+    <div class="topic">
+      <div class="reelNumberListThree"></div>
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>给分点</th>
+          <th>分数</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+        <tfoot>
+        <tr>
+          <th>总分</th>
+          <th id="totalNum"></th>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+  <div class="footBtn f-clear">
+    <ul class="btn-list float-l">
+      <li class="float-l" id="lastBatch">
+        <button class="btn btn-pre-default btn-other-size disabled" id="previousBatch"><span
+            class="icon icon-pre-s v-align-m"></span>
+          <span>上一批任务</span></button>
+      </li>
+      <li class="float-l" id="nextBatch">
+        <button class="btn btn-pre-default btn-other-size disabled" id="nextBatchBtn"><span
+            class="icon icon-next-s v-align-m"></span>
+          <span>下一批任务</span></button>
+      </li>
+      <button class="btn btn-primary btn-other-size widthBtn startJudge" style="display: none">开始评阅</button>
+    </ul>
+    <div class="stateBtnRight f-clear float-r">
+        <button class="btn btn-primary btn-other-size widthBtn" id="view_stem">查看题干</button>
+        <button class="btn btn-primary btn-other-size widthBtn backJudge" style="display: none">回评</button>
+    </div>
+    <div class="stateBtnRight f-clear float-r">
+    </div>
+  </div>
+</div>
+${require("html-loader?interpolate!../_statusBar.html")}
+</body>
+</html>

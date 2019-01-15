@@ -1,0 +1,13 @@
+.scoreboard-table {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+.scoreboard-table >thead>tr>th, .scoreboard-table >tfoot>tr>td{
+  border-bottom-width: 1px;
+  font-weight: normal;
+  text-align: center;
+}
+.scoreboard-table th, .scoreboard-table td {
+  padding: 5px 0;
+  background-color: #ffffff;
+}

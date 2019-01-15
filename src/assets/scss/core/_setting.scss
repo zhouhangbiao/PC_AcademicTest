@@ -1,0 +1,141 @@
+//----------------------------------------------------
+//作者:粉红豹
+//功能描述：全局变量集合
+//使用模块：全局
+//创建时间:2018/07/05
+//------------------修改记录-------------------------
+//修改人      修改日期        修改目的
+//----------------------------------------------------
+
+// Color system
+$black:       #1a1a1a !default;
+$white:       #fff !default;
+$gray:        #4c4c4c !default;
+$gray-100:    #e5e5e5 !default;
+$gray-200:    #808080 !default;
+$gray-300:    #b3b3b3 !default;
+$gray-400:    #ebebeb !default;
+$gray-500:    #f5f6f7 !default;
+$gray-600:    #1b283b !default;
+$gray-700:    #d9d9d9 !default;
+$gray-800:    #f0f0f0 !default;
+
+$blue:        #3795fe !default;//蓝色
+$blue-100:    #147ef6 !default;//蓝色-100
+$indigo:      #6610f2 !default;//靛蓝
+$purple:      #6f42c1 !default;//紫色
+$pink:        #e83e8c !default;//粉色
+$red:         #ff3a31 !default;//红色
+$red-100:     #e5352c !default;
+$orange:      #ff6743 !default;//橙色
+$orange-100:  #e55b3c !default;
+$yellow:      #f68a0b !default;//黄色
+$yellow-100:  #f77a01 !default;
+$green:       #87d37b !default;//绿色
+$green-100:   #76ba6c !default;
+$teal:        #20c997 !default;//水鸭色
+$cyan:        #c9d9fc !default;//青色
+
+
+$primary:       $blue !default;//主色
+$primary-100:   $blue-100 !default;
+$auxiliary:     $gray !default;//辅助色
+$success:       $green !default;//成功
+$success-100:   $green-100 !default;
+$info:          $cyan !default;//信息
+$warning:       $yellow !default;//警告
+$warning-100:   $yellow-100 !default;
+$danger:        $red !default;//危险
+$danger-100:    $red-100 !default;
+$light:         $orange !default;//光/亮
+$light-100:     $orange-100 !default;
+$disable:       $gray-500 !default;//禁用
+
+
+// body-bg
+$body-bg:                   $gray-500 !default;
+
+//font
+$font-base-family:            "Helvetica Neue", Helvetica, STHeiTi, sans-serif !default;
+
+$font-base-color:           $gray !default;//正文文字
+$font-primary-color:        $primary !default;//突出文字
+$font-weak-color:           $gray-100 !default;//辅助色
+$font-weak-deep-color:      $black     !default; //辅助色+
+$font-danger-color:         $danger !default;//错误用色
+$font-warning-color:        $warning !default;//购买用色
+$font-success-color:        $success !default;//正确用色
+
+$font-size-base:              16px !default;
+$font-size-lg:                16px !default;
+$font-size-sm:                14px !default;
+$font-size-smaller:           12px !default;
+$font-size-lead:              22px !default;
+
+
+$line-height-base:            1.5 !default;
+
+
+// Links
+$link-color:                  $font-base-color!default;//继承父级颜色
+$link-decoration:             none !default;//没有下划线
+$link-hover-color:            darken($link-color, 15%) !default;//颜色变暗
+$link-hover-decoration:       underline !default;//下划线
+
+// border
+$border-base-width:                1px !default;
+
+//border-color
+$border-base-color:                $gray-100 !default;
+$border-primary-color:             $primary !default;
+$border-primary-light-color:       $primary-100 !default;
+$border-warning-color:             $warning !default;
+$border-warning-light-color:       $warning-100 !default;
+$border-danger-color:              $danger !default;
+$border-success-color:             $success !default;
+
+
+//Button
+$button-base-width:      58px !default;
+$button-m-width:         64px !default;
+$button-md-width:        86px !default;
+$button-lg-width:        160px !default;
+$button-lgd-width:       340px !default;
+$button-sm-width:        40px !default;
+$button-smd-width:       24px !default;
+
+$button-base-height:     28px !default;
+$button-m-height:        32px !default;
+$button-lg-height:       44px !default;
+$button-sm-height:       22px !default;
+
+
+$button-default-bg:      $white !default; //默认
+$button-primary-bg:      $primary !default;//突出
+$button-waring-bg:       $warning !default;//警告
+$button-danger-bg:       $danger !default;//危险
+$button-success-bg:      $success !default;//成功
+$button-disable-bg:      $disable !default;//禁用
+$button-light-bg:        $light !default;
+
+$button-primary-ed-bg:      $primary-100 !default;//突出
+$button-waring-ed-bg:       $warning-100 !default;//警告
+$button-danger-ed-bg:       $danger-100 !default;//危险
+$button-success-ed-bg:      $success-100 !default;//成功
+$button-light-ed-bg:        $light-100 !default;
+
+//input
+$input-base-radius:         2px !default;
+$input-base-border:         0 !default;
+$input-pad:                 28px !default;
+
+// Z-index master list
+$zindex-dropdown:                   1000 !default;
+$zindex-sticky:                     1020 !default;
+$zindex-fixed:                      1030 !default;
+$zindex-modal-backdrop:             1040 !default;
+$zindex-modal:                      1050 !default;
+$zindex-popover:                    1060 !default;
+$zindex-tooltip:                    1070 !default;
+
+

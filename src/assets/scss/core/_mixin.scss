@@ -1,0 +1,69 @@
+//----------------------------------------------------
+//作者:粉红豹
+//功能描述：全局mixin方法集合
+//使用模块：全局
+//创建时间:2018/3/6
+//------------------修改记录-------------------------
+//修改人      修改日期        修改目的
+//----------------------------------------------------
+
+//清除浮动
+@mixin clearFix {
+  &:before,&:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+%clearFix {
+  @include clearFix;
+}
+
+//左右浮动
+@mixin float($float:left) {
+  float: $float;
+}
+
+
+@mixin display($display:bolck){
+  display: $display;
+}
+
+%d-table {
+  @include display(table);
+}
+%d-table-cell {
+  @include display(table-cell);
+}
+%vertical-align-top {
+  vertical-align: top;
+}
+%vertical-align-bottom {
+  vertical-align: bottom;
+}
+%vertical-align-middle {
+  vertical-align: middle;
+}
+@mixin vertical-align($vertical-align: top){
+  vertical-align: $vertical-align;
+}
+
+
+//字体对齐方式
+@mixin text-align($align:left){
+  text-align: $align;
+}
+
+// 单行省略号
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+%ellipsis-basic{
+  @include ellipsis;
+}
+
+
+

@@ -1,0 +1,81 @@
+.bg-box {
+  width: 100%;
+  height: 100%;
+  padding-top: 180px;
+  background: rgb(0, 118, 234);
+  position: absolute;
+  left: 50%;
+  /* 定位父级的50% */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /*自己的50% */
+  overflow-x: hidden
+}
+
+.input-box {
+  width: 380px;
+  height: 290px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  /* 定位父级的50% */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /*自己的50% */
+  border-radius: 2px;
+}
+
+.form-group p {
+  font-size: 22px;
+  margin-bottom: 24px
+}
+
+.login {
+  padding: 30px 20px 0 20px;
+}
+
+#userName,
+#passWord {
+  height: 44px;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+  width: 340px;
+}
+
+#passWord1 {
+  margin-top: 20px;
+}
+
+.bottom-img {
+  position: absolute;
+  right: 0;
+  width: 200%;
+  height: 110px;
+  bottom: 0;
+  background: url(/assets/images/img_animation.png) repeat-x;  
+  background-size: 50% 100%;
+  animation: animationImg 15s linear infinite;
+
+}
+
+@keyframes animationImg {
+  0% {
+    transform: translateX(0)
+  }
+  50% {
+    transform: translateX(25%)
+  }
+  100% {
+    transform: translateX(50%)
+  }
+
+}
+
+.focusborder {
+  border: 1px solid #147ef6 !important
+}
+
+#login {
+  font-size: 18px;
+  margin-top: 13px;
+}

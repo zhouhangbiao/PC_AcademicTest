@@ -1,0 +1,1043 @@
+//----------------------------------------------------
+//作者:粉红豹
+//功能描述：全局公用classes
+//使用模块：全局
+//创建时间:2018/07/05
+//------------------修改记录-------------------------
+//修改人      修改日期        修改目的
+//----------------------------------------------------
+@import "compass/utilities/sprites";
+@import "icon/*.png";
+
+@include all-icon-sprites;
+$icon-sprite-dimensions: true;
+@import "setting";
+@import "mixin";
+
+//reset
+html,
+body,
+p,
+pre,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+ul,
+ol,
+menu {
+  margin: 0;
+}
+
+input,
+option {
+  padding: 0;
+}
+
+input, textarea {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  outline: none;
+}
+
+textarea {
+  padding: 8px 10px;
+}
+
+ul,
+ol,
+menu {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+i,
+cite,
+dfn,
+em {
+  font-style: normal;
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: $font-base-color;
+  font-size: 14px;
+  background: $gray-500;
+  font-family: Helvetica,Hiragino Sans GB,Microsoft Yahei,sans-serif;
+}
+
+body {
+  min-width: 1024px;
+}
+
+#main {
+  padding-bottom: 50px;
+}
+
+body.window-open-body {
+  min-width: inherit;
+  height: auto;
+}
+
+.window-open-body #main {
+  padding-bottom: 0;
+}
+
+.float-l {
+  @include float;
+}
+
+.float-r {
+  @include float(right);
+}
+
+.float-none {
+  @include float(none);
+}
+
+.f-clear {
+  @include clearFix;
+}
+
+.display-none {
+  @include display(none);
+}
+
+.display-b {
+  @include display;
+}
+
+.display-inb {
+  @include display(inline-block);
+}
+
+.display-inline {
+  @include display(inline);
+}
+
+.display-table {
+  @include display(table);
+}
+
+.display-table-cell {
+  @include display(table-cell);
+}
+
+//对齐方式
+.v-align-t {
+  @include vertical-align(top);
+}
+
+.v-align-m {
+  @include vertical-align(middle);
+}
+
+.v-align-b {
+  @include vertical-align(bottom);
+}
+
+.text-l {
+  @include text-align;
+}
+
+.text-c {
+  @include text-align(center);
+}
+
+.text-r {
+  @include text-align(right);
+}
+
+// 单行省略号
+.ellipsis {
+  @include ellipsis;
+}
+
+//内外边距
+.mar-base {
+  margin: 15px;
+}
+
+.mar-xs {
+  margin: 5px;
+}
+
+.mar-s {
+  margin: 10px;
+}
+
+.mar-m {
+  margin: 20px;
+}
+
+.mar-md {
+  margin: 25px;
+}
+
+.mar-l {
+  margin: 30px;
+}
+
+.mar-lg {
+  margin: 40px;
+}
+
+.mar-t-base {
+  margin-top: 15px;
+}
+
+.mar-t-xs {
+  margin-top: 5px;
+}
+
+.mar-t-s {
+  margin-top: 10px;
+}
+
+.mar-t-m {
+  margin-top: 20px;
+}
+
+.mar-t-md {
+  margin-top: 25px;
+}
+
+.mar-t-l {
+  margin-top: 30px;
+}
+
+.mar-t-lg {
+  margin-top: 40px;
+}
+
+.mar-b-base {
+  margin-bottom: 15px;
+}
+
+.mar-b-xs {
+  margin-bottom: 5px;
+}
+
+.mar-b-s {
+  margin-bottom: 10px;
+}
+
+.mar-b-m {
+  margin-bottom: 20px;
+}
+
+.mar-b-md {
+  margin-bottom: 25px;
+}
+
+.mar-b-l {
+  margin-bottom: 30px;
+}
+
+.mar-b-lg {
+  margin-bottom: 40px;
+}
+
+.mar-r-base {
+  margin-left: 15px;
+}
+
+.mar-l-xs {
+  margin-left: 5px;
+}
+
+.mar-l-s {
+  margin-left: 10px;
+}
+
+.mar-l-m {
+  margin-left: 20px;
+}
+
+.mar-l-md {
+  margin-left: 25px;
+}
+
+.mar-l-l {
+  margin-left: 30px;
+}
+
+.mar-l-lg {
+  margin-left: 40px;
+}
+
+.mar-r-base {
+  margin-right: 15px;
+}
+
+.mar-r-xs {
+  margin-right: 5px;
+}
+
+.mar-r-s {
+  margin-right: 10px;
+}
+
+.mar-r-m {
+  margin-right: 20px;
+}
+
+.mar-r-md {
+  margin-right: 25px;
+}
+
+.mar-r-l {
+  margin-right: 30px;
+}
+
+.mar-r-lg {
+  margin-right: 40px;
+}
+
+.pad-base {
+  padding: 15px;
+}
+
+.pad-xs {
+  padding: 5px;
+}
+
+.pad-s {
+  padding: 10px;
+}
+
+.pad-m {
+  padding: 20px;
+}
+
+.pad-md {
+  padding: 25px;
+}
+
+.pad-l {
+  padding: 30px;
+}
+
+.pad-lg {
+  padding: 40px;
+}
+
+.pad-t-base {
+  padding-top: 15px;
+}
+
+.pad-t-xs {
+  padding-top: 5px;
+}
+
+.pad-t-s {
+  padding-top: 10px;
+}
+
+.pad-t-m {
+  padding-top: 20px;
+}
+
+.pad-t-md {
+  padding-top: 25px;
+}
+
+.pad-t-l {
+  padding-top: 30px;
+}
+
+.pad-t-lg {
+  padding-top: 40px;
+}
+
+.pad-b-base {
+  padding-bottom: 15px;
+}
+
+.pad-b-xs {
+  padding-bottom: 5px;
+}
+
+.pad-b-s {
+  padding-bottom: 10px;
+}
+
+.pad-b-m {
+  padding-bottom: 20px;
+}
+
+.pad-b-md {
+  padding-bottom: 25px;
+}
+
+.pad-b-l {
+  padding-bottom: 30px;
+}
+
+.pad-b-lg {
+  padding-bottom: 40px;
+}
+
+.pad-r-base {
+  padding-left: 15px;
+}
+
+.pad-l-xs {
+  padding-left: 5px;
+}
+
+.pad-l-s {
+  padding-left: 10px;
+}
+
+.pad-l-m {
+  padding-left: 20px;
+}
+
+.pad-l-md {
+  padding-left: 25px;
+}
+
+.pad-l-l {
+  padding-left: 30px;
+}
+
+.pad-l-lg {
+  padding-left: 40px;
+}
+
+.pad-r-base {
+  padding-right: 15px;
+}
+
+.pad-r-xs {
+  padding-right: 5px;
+}
+
+.pad-r-s {
+  padding-right: 10px;
+}
+
+.pad-r-m {
+  padding-right: 20px;
+}
+
+.pad-r-md {
+  padding-right: 25px;
+}
+
+.pad-r-l {
+  padding-right: 30px;
+}
+
+.pad-r-lg {
+  padding-right: 40px;
+}
+
+//字体颜色
+.font-weak-deep {
+  color: $font-weak-deep-color;
+}
+
+.font-weak {
+  color: $font-weak-color;
+}
+
+.font-primary {
+  color: $font-primary-color;
+}
+
+.font-base {
+  color: $font-base-color;
+}
+
+//h1-h6字体大小
+.pre-h1 {
+  font-size: $font-size-lead;
+}
+
+.pre-h2{
+  font-size: $font-size-lg;
+}
+
+.pre-h3{
+  font-size: $font-size-base;
+}
+
+.pre-h4{
+  font-size: $font-size-sm;
+}
+
+.pre-h6{
+  font-size: $font-size-smaller;
+}
+
+.border-top-0 {
+  border-top: 0 !important;
+}
+
+.border-left-0 {
+  border-left: 0 !important;
+}
+
+.border-right-0 {
+  border-right: 0 !important;
+}
+
+.border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
+//重置bootstrap按钮
+.btn {
+  border-radius: $input-base-radius;
+  outline: none !important;
+}
+.btn-pre-lg,
+.btn-pre-sm,
+.btn-pre-xs,
+.btn-pre-m,
+.btn-pre-md,
+.btn-pre-mdd,
+.btn-pre-lg,
+.btn-pre-lgd,
+.btn-pre-lgd,
+.btn-other-size{
+  padding: 0;
+}
+
+.btn-groups .btn + .btn {
+  margin-left: 8px;
+}
+
+.btn-pre-default {
+  border-color: $gray-700;
+  background: $white;
+  color: #4d4d4d;
+
+  &:hover,
+  &:active,
+  &:active:hover,
+  &:focus:hover,
+  &.on {
+    background: $border-primary-color;
+    border-color: $border-primary-color;
+    color: $white;
+  }
+
+  &:focus {
+    background: $white;
+    border-color: $gray-700;
+  }
+}
+
+.btn-primary {
+  border-color: $border-primary-color;
+  background: $border-primary-color;
+  color: $white;
+
+  &:hover,
+  &:active,
+  &:active:hover,
+  &:focus,
+  &:focus:hover,
+  &.on {
+    background: $border-primary-light-color;
+    border-color: $border-primary-light-color;
+  }
+}
+
+.btn-warning {
+  background: $border-warning-color;
+  border-color: $border-warning-color;
+  color: $white;
+
+  &:hover,
+  &:active,
+  &:active:hover,
+  &:focus,
+  &:focus:hover,
+  &.on {
+    background: $border-warning-light-color;
+    border-color: $border-warning-light-color;
+  }
+}
+
+.btn-pre-sm {
+  width: $button-sm-width;
+  height: $button-sm-height;
+  line-height: $button-sm-height - 1 ;
+}
+
+.btn-pre-xs {
+  width: $button-smd-width;
+  height: $button-sm-height;
+  line-height: $button-sm-height - 1;
+}
+
+.btn-pre-m {
+  width: $button-m-width;
+  height: $button-m-height;
+  line-height: $button-m-height - 1;
+}
+
+.btn-pre-md {
+  width: $button-md-width;
+  height: $button-base-height;
+  line-height: $button-base-height - 1;
+}
+
+.btn-pre-mdd {
+  width: 72px;
+  height: $button-base-height;
+  line-height: $button-base-height - 1;
+}
+
+.btn-pre-lg {
+  width: $button-lg-width;
+  height: $button-lg-height;
+  line-height: $button-lg-height - 1;
+}
+
+.btn-pre-lgd {
+  width: $button-lgd-width;
+  height: $button-lg-height;
+  line-height: $button-lg-height - 1;
+}
+
+.btn-other-size {
+  padding: 0 8px;
+  height: $button-base-height;
+  line-height: $button-base-height - 1;
+}
+
+.block-space-12 {
+  height: 12px;
+}
+
+.block-space-10 {
+  height: 10px;
+}
+
+.block-space-20 {
+  height: 20px;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon-pre-s {
+  @include icon-sprite(pre-s);
+}
+
+.icon-next-s {
+  @include icon-sprite(next-s);
+}
+
+.icon-left {
+  @include icon-sprite(left);
+}
+
+.icon-right-ss {
+  @include icon-sprite(right-ss);
+}
+
+.icon-circle {
+  @include icon-sprite(circle);
+}
+
+.icon-clean {
+  @include icon-sprite(clean);
+}
+
+.icon-close {
+  @include icon-sprite(close);
+}
+
+.icon-cross {
+  @include icon-sprite(cross);
+}
+
+.icon-dotted {
+  @include icon-sprite(dotted);
+}
+
+.icon-down {
+  @include icon-sprite(down);
+}
+
+.icon-left-s {
+  @include icon-sprite(left-s);
+}
+
+.icon-line {
+  @include icon-sprite(line);
+}
+
+.icon-next {
+  @include icon-sprite(next);
+}
+
+.icon-pencil {
+  @include icon-sprite(pencil);
+}
+
+.icon-pre {
+  @include icon-sprite(pre);
+}
+
+.icon-question {
+  @include icon-sprite(question);
+}
+
+.icon-redo {
+  @include icon-sprite(redo);
+}
+
+.icon-revoke {
+  @include icon-sprite(revoke);
+}
+
+.icon-right-s {
+  @include icon-sprite(right-s);
+}
+
+.icon-right-sh {
+  @include icon-sprite(right-sh);
+}
+
+.icon-square {
+  @include icon-sprite(square);
+}
+
+.icon-tick {
+  @include icon-sprite(tick);
+}
+
+.icon-up {
+  @include icon-sprite(up);
+}
+
+.exam-toolbar {
+  position: relative;
+  height: 48px;
+  background: $white;
+  border-bottom: 1px solid $border-base-color;
+  border-top: 1px solid $border-base-color;
+}
+
+.toolbar-columns {
+  padding-left: 12px;
+  height: 48px;
+  line-height: 48px;
+}
+
+.exam-toolbar .toolbar-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+}
+
+.btn-pre-default {
+  &:hover,
+  &:focus {
+    .icon-pre-s {
+      @include icon-sprite(pre-s-on);
+    }
+    .icon-next-s {
+      @include icon-sprite(next-s-on);
+    }
+    .icon-left {
+      @include icon-sprite(left-on);
+    }
+    .icon-right-ss {
+      @include icon-sprite(right-ss-on);
+    }
+    color: $white;
+    background: $button-primary-bg;
+    border-color: $button-primary-bg;
+
+  }
+  &:active {
+    .icon-pre-s {
+      @include icon-sprite(pre-s);
+    }
+    .icon-next-s {
+      @include icon-sprite(next-s);
+    }
+    .icon-left {
+      @include icon-sprite(left);
+    }
+    .icon-right-ss {
+      @include icon-sprite(right-ss);
+    }
+    background: #f5f6f7;
+    border-color: #d9d9d9;
+    color: #4d4d4d;
+  }
+  &.disabled {
+    &:hover,
+    &:focus,
+    &:active {
+      .icon-pre-s {
+        @include icon-sprite(pre-s);
+      }
+      .icon-next-s {
+        @include icon-sprite(next-s);
+      }
+      .icon-left {
+        @include icon-sprite(left);
+      }
+      .icon-right-ss {
+        @include icon-sprite(right-ss);
+      }
+      background: #f5f6f7;
+      border-color: #d9d9d9;
+      color: #4d4d4d;
+    }
+  }
+}
+
+.btn-list {
+  margin-top: -2px;
+  .btn {
+    overflow: hidden;
+  }
+  li + li {
+    margin-left: 12px;
+  }
+}
+
+.toolbar-footer {
+  position: fixed;
+  bottom: 47px;
+  z-index: 20;
+  width: 100%;
+  left: 0;
+}
+
+//tab切换
+.u-tab {
+  position: relative;
+  z-index: 2;
+  height: 46px;
+  line-height: 46px;
+  li {
+    width: 130px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+
+    &:hover,
+    &.on {
+      color: $font-primary-color;
+      border-bottom-color: $border-primary-color;
+    }
+  }
+
+}
+
+//弹框
+.modal-header {
+  padding: 0 10px;
+  height: 38px;
+  line-height: 38px;
+  background: $gray-800;
+}
+
+.modal-footer {
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+  background: $gray-800;
+}
+
+.modal-header .close {
+  margin-top: 7.5px;
+}
+
+.modal-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto !important;
+}
+
+.form-horizontal,
+.modal-content {
+  width: 100%;
+}
+
+//表单
+.form-control {
+  background: $gray-800;
+  border-radius: $input-base-radius;
+  border-color: $gray-700;
+  &:focus {
+    border-color: $button-primary-bg;
+  }
+  &.on,
+  &:focus {
+    background: $white;
+    box-shadow: none;
+  }
+}
+
+//修改layui 提示
+.layui-layer-hui {
+  background: $black;
+}
+
+.layui-layer-hui .layui-layer-content {
+  padding: 20px 15px;
+}
+
+//判分
+.main-container {
+  position: relative;
+}
+
+.external-container {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 750px;
+  min-width: 210px;
+}
+
+.marking-sidebar {
+  position: absolute;
+  z-index: 10;
+  width: 240px;
+  top: 70px;
+  left: 782px;
+  padding: 12px 12px 60px 12px;
+}
+
+.marking-sidebar {
+  #set_problem {
+    width: 216px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
+
+.marking-sidebar {
+  #view_stem, #view_point {
+    width: 102px;
+  }
+}
+
+.marking-sidebar {
+  #view_point {
+    margin-left: 8px;
+  }
+}
+
+//查看任务
+.task-view-container {
+  display: block;
+}
+.task-view-container {
+  .side-left {
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+  }
+}
+.task-view-container {
+  .marking-show {
+    overflow: auto;
+    height: 494px;
+    border: 1px solid #e6e6e6;
+  }
+}
+.task-view-container {
+  .side-right {
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 10px 10px 0;
+    .scoreboard-table th,
+    .scoreboard-table td {
+      width: 70px;
+    }
+    .scoreboard-table th:first-child,
+    .scoreboard-table td:first-child {
+      width: 80px;
+    }
+  }
+}
+
+//表格
+#myTabContent thead th {
+  background: $gray-800;
+}
+
+#myTabContent tbody > tr > td {
+  color: #4d4d4d;
+}
+
+#myTabContent tbody > tr > td,
+#myTabContent tbody > tr > th,
+#myTabContent tfoot > tr > td,
+#myTabContent tfoot > tr > th,
+#myTabContent thead > tr > td,
+#myTabContent thead > tr > th {
+  border: 1px solid $gray-100;
+}
+#myTabContent .table>tbody>tr>td,
+#myTabContent .table>tbody>tr>th,
+#myTabContent .table>tfoot>tr>td,
+#myTabContent .table>tfoot>tr>th,
+#myTabContent .table>thead>tr>td,
+#myTabContent.table>thead>tr>th,
+.ScoringPoints .table>tbody>tr>td,
+.ScoringPoints .table>tbody>tr>th,
+.ScoringPoints .table>tfoot>tr>td,
+.ScoringPoints .table>tfoot>tr>th,
+.ScoringPoints .table>thead>tr>td,
+.ScoringPoints.table>thead>tr>th{
+  vertical-align: middle;
+}
+.nav-tabs > li > a {
+  border: 0;
+}
+.nav>li>a {
+  color: #4d4d4d;
+  border: 0;
+  border-bottom: 2px solid transparent;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+  border: 0;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+  background: none;
+  border-bottom: 2px solid  $border-primary-color;
+  color: $font-primary-color;
+}
+
+

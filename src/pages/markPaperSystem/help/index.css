@@ -1,0 +1,6 @@
+.showassistance{
+    padding: 24px 32px;
+  max-width: 1024px;
+    overflow: auto;
+    min-height:564px ;
+}
